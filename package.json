@@ -7,13 +7,34 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "baseUrl": "./src/",
+  "paths": {
+    "@components/*": [
+      "components/*"
+    ],
+    "@data/*": [
+      "data/*"
+    ],
+    "@leaflet/*": [
+      "leaflet/*"
+    ],
+    "@tests/*": [
+      "tests/*"
+    ],
+    "@types/*": [
+      "types/*"
+    ]
   },
   "dependencies": {
+    "jsdom": "^26.0.0",
     "leaflet": "^1.9.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-leaflet": "^5.0.0"
+    "react-leaflet": "^5.0.0",
+    "vitest": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
